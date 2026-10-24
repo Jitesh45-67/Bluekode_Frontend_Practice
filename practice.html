@@ -1,38 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="practice.css">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="practice.css">
 </head>
 <body>
-    <header class="heading-bar"></header>
-    <h1>Jitesh Abinav SS</h1>
-    <nav>
-  <a href="/About/">About</a> |
-  <a href="/Skills and Interests/">Skills and Interests</a> |
-  <a href="/Academics and Extra Curricular/">Academics and Extra Curricular</a> 
-  <a href="/For Contact/">For Contact</a>
-</nav>
-<br>
-<img src="image.png" alt="My Image" width="200" height="200">
-<h2>About Me</h2>
-<p>What's up! I am a 16-year-old student pursuing my education in CS Academy CBSE curriculum. I am also preparing for the JEE examination and working hard towards achieving my goals. As a passionate learner, I strive to excel in my studies and develop my skills.</p>
-<h2>Skills/Interests</h2>
-<ol>
-    <li>Programming</li>
-    <li>Web development and Artificial Intelligence</li>
-    <li>Learning New Technologies</li>
-</ol>
-<h2>Academics and Extra Curricular</h2>
-<ul>
-    <li>Consistently giving my best effort in all academic pursuits. Scored 493/500 class 10 boards. Always striving to improve my academic performance.</li>
-    <li>An active participant in various extracurricular events and activities. Attended several MUN conferences. Always eager to learn and grow through these experiences.
+    <header class="heading-bar">
+        <h1>Jitesh Abinav SS</h1>
+    </header>
 
-    </li>
-</ul>
-<h2>For Contact</h2>
-<p></p>
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills and Interests</a> |
+        <a href="#academics">Academics and Extra Curricular</a> |
+        <a href="#projects">Bluekode Projects</a> |
+        <a href="#contact">For Contact</a>
+    </nav>
+
+    <main>
+        <figure class="jiteshimg">
+            <img src='image.png' width='200' height='200' alt='My Image'>
+            <figcaption>My Image</figcaption>
+        </figure>
+
+        <div class="content">
+            <p>Welcome to my personal portfolio website! Here, you can learn more about me, my skills and interests, academic achievements, and extracurricular activities. Feel free to explore the different sections and get in touch with me if you have any questions or opportunities for collaboration.</p>
+
+            <p id="greeting">Welcome to my page!</p>
+            <button id="greet-button" type="button">Say Hello</button>
+
+            <div class="welcome-box">
+                <label for="name-input">Enter your name</label>
+                <input id="name-input" type="text" placeholder="Enter your name">
+                <button id="welcome-button" type="button">Greet Me</button>
+                <p id="welcome-message"></p>
+            </div>
+        </div>
+
+        <div class="About" id="about">
+            <h2>About Me</h2>
+            <p>What's up! I am a <strong>16-year-old</strong> student pursuing my education in <strong>CBSE</strong> curriculum. I am also preparing for the JEE examination and working hard towards achieving my goals. As a passionate learner, I strive to excel in my studies and develop my skills.</p>
+        </div>
+
+        <div class="Skills" id="skills">
+            <h2>Skills/Interests</h2>
+            <ol>
+                <li>Programming</li>
+                <li>Web development and Artificial Intelligence</li>
+                <li>Learning New Technologies</li>
+            </ol>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Programming</h3>
+                </div>
+                <div class="card">
+                    <h3>Web development and Artificial Intelligence</h3>
+                </div>
+                <div class="card">
+                    <h3>Learning New Technologies</h3>
+                </div>
+            </div>
+            <div class="section-images">
+    <figure class="gallery-card">
+        <img src="cs.jpg" alt="Programming and Data Stream" width="220" height="140">
+        <figcaption><strong>Programming &amp; Code</strong></figcaption>
+    </figure>
+    <figure class="gallery-card">
+        <img src="AI.jpg" alt="Artificial Intelligence Hologram" width="220" height="140">
+        <figcaption><strong>Artificial Intelligence</strong></figcaption>
+    </figure>
+</div>
+        
+
+        <div class="Academics" id="academics">
+            <h2>Academics and Extra Curricular</h2>
+            <ul>
+                <li>Consistently giving my best effort in all academic pursuits. Scored 493/500 class 10 boards. Always striving to improve my academic performance.</li>
+                <li>An active participant in various extracurricular events and activities. Attended several MUN conferences. Always eager to learn and grow through these experiences.</li>
+            </ul>
+        </div>
+
+        <div class="Projects" id="projects">
+            <h2>Bluekode Projects</h2>
+            <ol>
+                <li>CS Reconnect: A website where students can find their lost items</li>
+                <li>Portfolio Website: Using HTML, CSS</li>
+            </ol>
+        </div>
+<div class="section-images">
+    <figure class="gallery-card">
+        <img src="reconnect.jpg" alt="CS Reconnect Home Portal" width="220" height="140">
+        <figcaption><strong>CS Reconnect – Lost &amp; Found Portal</strong></figcaption>
+    </figure>
+    <figure class="gallery-card">
+        <img src="reconnect2.png" alt="CS Reconnect Report an Item Page" width="220" height="140">
+        <figcaption><strong>CS Reconnect – Report an Item Form</strong></figcaption>
+    </figure>
+</div>
+        <div class="Contact" id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>I'm sure you would like it!</p>
+    </footer>
+    <script src="practice.js"></script>
 </body>
 </html>
